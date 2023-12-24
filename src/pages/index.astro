@@ -1,0 +1,13 @@
+---
+import { Party } from "../components/Party";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <div class="grid place-content-center">
+      <h1>Astro 🚀 🤝 Partykit 🎈</h1>
+      <Party client:load />
+    </div>
+  </main>
+</Layout>
