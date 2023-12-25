@@ -24,3 +24,6 @@ pnpm-debug.log*
 .netlify
 
 .eslintcache
+
+# Partykit
+.partykit
