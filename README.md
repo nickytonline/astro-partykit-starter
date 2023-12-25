@@ -37,6 +37,8 @@ Inside of your Astro project, you'll see the following folders and files:
 │       └── Party.tsx
 │   └── pages/
 │       └── index.astro
+│       └── chat/
+│           └── index.astro
 └── package.json
 ```
 
