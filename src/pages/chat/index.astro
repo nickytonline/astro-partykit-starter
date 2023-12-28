@@ -2,10 +2,8 @@
 import { Party } from "../../components/Party";
 import Layout from "../../layouts/Layout.astro";
 
-const username =
-  Astro.url.searchParams.get("username") ??
-  "astro-partykit-room" ??
-  "Anonymous";
+const username = Astro.url.searchParams.get("username") ?? "anonymous";
+
 const roomId = Astro.url.searchParams.get("roomId") ?? "astro-partykit-room";
 ---
 
