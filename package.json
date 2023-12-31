@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "partykit dev & astro dev",
+    "dev": "partykit dev && astro dev",
     "start": "astro dev",
     "build": "astro check && astro build && partykit deploy",
     "preview": "astro preview",
