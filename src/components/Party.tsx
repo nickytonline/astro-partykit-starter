@@ -2,7 +2,8 @@ import usePartySocket from "partysocket/react";
 import { useEffect, useState } from "react";
 import type { ChatMessage } from "../../party";
 
-const host = import.meta.env.PUBLIC_PARTYKIT_HOST ?? "localhost:1999";
+const isProd = import.meta.env.PROD;
+const host = isProd ? import.meta.env.PUBLIC_PARTYKIT_HOST : "localhost:1999";
 
 interface PartyProps {
   username: string;
