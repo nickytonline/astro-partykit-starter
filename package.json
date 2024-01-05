@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "partykit dev & astro dev",
+    "dev": "concurrently \"partykit dev\" \"astro dev\"",
     "start": "astro dev",
     "build": "astro check && astro build && partykit deploy",
     "preview": "astro preview",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
+    "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^0.31.0",
