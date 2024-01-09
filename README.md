@@ -56,9 +56,9 @@ Any static assets, like images, can be placed in the `public/` directory.
 ### Setting up Environment Variables
 
 1. Run `npx partykit@latest token generate` to generate a token.
-2. Run `ntl env:set PARTYKIT_LOGIN nickytonline` to add it to the environment variables for Netlify deploys.
+2. Run `ntl env:set PARTYKIT_LOGIN choose-your-value-here` to add it to the environment variables for Netlify deploys.
 3. Run `ntl env:set PARTYKIT_TOKEN THE_GENERATED_SUPER_SECRET_TOKEN` to add it to the environment variables for Netlify deploys.
-4. Run `ntl env:set PUBLIC_PARTYKIT_HOST https://astro-partykit-starter-party.nickytonline.partykit.dev` so that the production URL for Partykit is available for the deployment.
+4. Run `ntl env:set PUBLIC_PARTYKIT_HOST set-your-url-here` so that the production URL for Partykit is available for the deployment.
 
 ### Deploy to Netlify
 
