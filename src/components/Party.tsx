@@ -17,7 +17,7 @@ export const Party = ({ username, roomId }: PartyProps) => {
     room: roomId,
     onMessage(event) {
       const message = JSON.parse(event.data) as ChatMessage;
-
+      message.id = crypto.randomUUID();
       if (message.text) {
         setMessages((messages) => [...messages, message]);
       }
@@ -62,8 +62,8 @@ export const Party = ({ username, roomId }: PartyProps) => {
       </form>
 
       <ul className="my-4 grid gap-2">
-        {messages.map(({ user, text }) => (
-          <li key={`${user}_${text}`} className="flex gap-2">
+        {messages.map(({ user, text, id }) => (
+          <li key={id} className="flex gap-2">
             <span className="font-bold">{user}:</span>
             <span>{text}</span>
           </li>
