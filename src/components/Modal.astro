@@ -65,3 +65,25 @@ const { roomId, username } = Astro.props;
     </div>
   </div>
 </dialog>
+
+<script>
+  const dialog = document.querySelector("dialog");
+  const returnHomeBtn = document.getElementById("return-home-btn");
+  const leaveRoomBtn = document.getElementById("leave-room-btn");
+  const stayInRoomBtn = document.getElementById("stay-in-room-btn");
+
+  const closeModal = () => dialog?.close();
+
+  const returnHome = () => {
+    window.location.href = "/";
+    closeModal();
+  };
+
+  leaveRoomBtn?.addEventListener("click", () => {
+    dialog?.showModal();
+  });
+
+  returnHomeBtn?.addEventListener("click", returnHome);
+
+  stayInRoomBtn?.addEventListener("click", closeModal);
+</script>
