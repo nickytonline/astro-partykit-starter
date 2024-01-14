@@ -2,4 +2,3 @@ dist/
 node_modules/
 CHANGELOG.md
 package-lock.json
-/src/components/Modal.astro

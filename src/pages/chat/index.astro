@@ -1,7 +1,7 @@
 ---
 import { Party } from "../../components/Party";
+import { Modal } from "../../components/Modal";
 import Layout from "../../layouts/Layout.astro";
-import Modal from "../../components/Modal.astro";
 
 const username = Astro.url.searchParams.get("username") ?? "anonymous";
 const roomId = Astro.url.searchParams.get("roomId") ?? "astro-partykit-room";
@@ -13,12 +13,7 @@ const roomId = Astro.url.searchParams.get("roomId") ?? "astro-partykit-room";
       <h1 class="text-center">Astro 🚀 🤝 Partykit 🎈</h1>
       <Party username={username} roomId={roomId} client:load />
 
-      <button
-        id="leave-room-btn"
-        class="bg-red-500 hover:bg-red-700 w-36 mx-auto text-white font-bold py-2 px-4 rounded"
-        >Leave room</button
-      >
-      <Modal username={username} roomId={roomId} />
+      <Modal username={username} roomId={roomId} client:load />
     </div>
   </main>
 </Layout>
