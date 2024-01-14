@@ -2,9 +2,17 @@
 import { Party } from "../../components/Party";
 import Layout from "../../layouts/Layout.astro";
 
-const username = Astro.url.searchParams.get("username") ?? "anonymous";
+const usernameParams = Astro.url.searchParams.get("username");
+const username =
+  usernameParams === null || usernameParams === ""
+    ? "anonymous"
+    : usernameParams;
 
-const roomId = Astro.url.searchParams.get("roomId") ?? "astro-partykit-room";
+const roomIdParams = Astro.url.searchParams.get("roomId");
+const roomId =
+  roomIdParams === null || roomIdParams === ""
+    ? "astro-partykit-room"
+    : roomIdParams;
 ---
 
 <Layout title="Welcome to Astro.">
