@@ -1,5 +1,6 @@
 ---
 import { Party } from "../../components/Party";
+import { Modal } from "../../components/Modal";
 import Layout from "../../layouts/Layout.astro";
 
 const usernameParams = Astro.url.searchParams.get("username");
@@ -13,6 +14,8 @@ const roomId = !roomIdParams ? "astro-partykit-room" : roomIdParams;
     <div class="grid place-content-center">
       <h1 class="text-center">Astro 🚀 🤝 Partykit 🎈</h1>
       <Party username={username} roomId={roomId} client:load />
+
+      <Modal username={username} roomId={roomId} client:load />
     </div>
   </main>
 </Layout>
