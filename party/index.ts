@@ -3,6 +3,7 @@ import type * as Party from "partykit/server";
 export interface ChatMessage {
   user: string;
   text: string;
+  id: string;
 }
 
 export default class Server implements Party.Server {
