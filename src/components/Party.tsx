@@ -41,6 +41,7 @@ export const Party = ({ username, roomId }: PartyProps) => {
 
           socket.send(JSON.stringify({ user: username, text }));
           event.preventDefault();
+          (event.target as HTMLFormElement).reset();
         }}
       >
         <div className="flex gap-2 items-center">
