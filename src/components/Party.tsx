@@ -36,11 +36,12 @@ export const Party = ({ username, roomId }: PartyProps) => {
       <form
         className="mt-2 flex flex-col gap-4"
         onSubmit={(event) => {
-          const form = new FormData(event.target as HTMLFormElement);
+          const formElement = event.target as HTMLFormElement;
+          const form = new FormData(formElement);
           const text = form.get("message")?.valueOf();
           socket.send(JSON.stringify({ user: username, text }));
+          formElement.reset();
           event.preventDefault();
-          (event.target as HTMLFormElement).reset();
         }}
       >
         <div className="flex gap-2 items-center">
