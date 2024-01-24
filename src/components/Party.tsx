@@ -36,10 +36,11 @@ export const Party = ({ username, roomId }: PartyProps) => {
       <form
         className="mt-2 flex flex-col gap-4"
         onSubmit={(event) => {
-          const form = new FormData(event.target as HTMLFormElement);
-          const text = form.get("message").valueOf();
-
+          const formElement = event.target as HTMLFormElement;
+          const form = new FormData(formElement);
+          const text = form.get("message")?.valueOf();
           socket.send(JSON.stringify({ user: username, text }));
+          formElement.reset();
           event.preventDefault();
         }}
       >
@@ -50,6 +51,7 @@ export const Party = ({ username, roomId }: PartyProps) => {
               className="border border-gray-400 rounded p-2"
               name="message"
               type="text"
+              required
             />
           </label>
           <button
