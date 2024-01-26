@@ -8,7 +8,9 @@
     "build": "astro check && astro build && partykit deploy",
     "preview": "astro preview",
     "astro": "astro",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
@@ -24,6 +26,14 @@
     "tailwindcss": "^3.4.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-interactions": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.10",
+    "@storybook/react": "^7.6.10",
+    "@storybook/react-vite": "^7.6.10",
+    "@storybook/test": "^7.6.10",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.19.0",
     "concurrently": "^8.2.2",
@@ -32,11 +42,13 @@
     "eslint-plugin-astro": "^0.31.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-storybook": "^0.6.15",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "partykit": "0.0.53",
     "prettier": "3.1.1",
     "prettier-plugin-astro": "^0.13.0",
+    "storybook": "^7.6.10",
     "typescript": "^5.3.3"
   },
   "lint-staged": {
