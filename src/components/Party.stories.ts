@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Modal } from "./Modal";
+import { Party } from "./Party";
 
-const meta: Meta<typeof Modal> = {
-  title: "Components/Modal",
-  component: Modal,
+const meta: Meta<typeof Party> = {
+  title: "Components/Party",
+  component: Party,
 };
 
 export default meta;
@@ -13,7 +13,7 @@ type StoryProps = {
   username: string;
 };
 
-export const LeaveRoomModal: StoryObj<StoryProps> = {
+export const ChatRoom: StoryObj<StoryProps> = {
   args: {
     roomId: "456",
     username: "JaneDoe",
