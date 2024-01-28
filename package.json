@@ -17,7 +17,6 @@
     "@astrojs/netlify": "^4.0.1",
     "@astrojs/react": "^3.0.8",
     "@astrojs/tailwind": "^5.1.0",
-    "@storybook/addon-a11y": "^7.6.10",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "astro": "^4.2.4",
@@ -27,6 +26,7 @@
     "tailwindcss": "^3.4.0"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.10",
     "@storybook/addon-essentials": "^7.6.10",
     "@storybook/addon-interactions": "^7.6.10",
     "@storybook/addon-links": "^7.6.10",
@@ -37,6 +37,7 @@
     "@storybook/test": "^7.6.10",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.19.0",
+    "autoprefixer": "^10.4.17",
     "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -47,6 +48,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "partykit": "0.0.53",
+    "postcss": "^8.4.33",
     "prettier": "3.1.1",
     "prettier-plugin-astro": "^0.13.0",
     "storybook": "^7.6.10",
