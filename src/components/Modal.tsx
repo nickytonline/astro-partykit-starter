@@ -25,7 +25,7 @@ export const Modal = ({ roomId, username }: ModalProps) => {
     <>
       <button
         onClick={handleOpenModal}
-        className="bg-red-500 hover:bg-red-700 w-36 mx-auto text-white font-bold py-2 px-4 rounded"
+        className="bg-red-600 hover:bg-red-700 w-36 mx-auto text-white font-bold py-2 px-4 rounded"
       >
         Leave Room
       </button>
