@@ -16,6 +16,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`                                                                   |
 | `npm run astro -- --help` | Get help using the Astro CLI                                                                                       |
 | `npm run storybook`       | Starts Storybook on `localhost:6006`                                                                               |
+| `npm run build-storybook` | Generates a production-ready build of Storybook                                                                    |
 
 If you plan to use Netlify, you need to install the [Netlify CLI](https://docs.netlify.com/cli/get-started/) to run `ntl dev`.
 
@@ -38,7 +39,10 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── index.ts
 ├── src/
 │   └── components/
-│       └── Party.tsx
+        ├── Modal.stories.ts
+        ├── Modal.tsx
+        ├── Party.stories.ts
+        └── Party.tsx
 │   └── pages/
 │       └── index.astro
 │       └── chat/
@@ -50,7 +54,19 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 
 `src/components/` is where components go, Astro/React/Vue/Svelte/Preact components. For this starter project, we're using React, but feel free to switch to your favorite framework.
 
+We have also added the Storybook stories for the components in `src/components/` to help you develop your components in isolation.
+
 Any static assets, like images, can be placed in the `public/` directory.
+
+## Using Storybook
+
+This starter kit comes with Storybook pre-configured. You can run `npm run storybook` to start the Storybook server locally.
+
+![Storybook preview of the Modal component](./public/storybook-preview.png)
+
+We have also added the `@storybook/addon-a11y` addon to help you make sure your components are accessible.
+
+![Accessibility addon of the Modal component](./public/a11y-addon-preview.png)
 
 ## Deployment
 
