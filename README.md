@@ -38,10 +38,15 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── src/
 │   └── components/
 │       └── Party.tsx
+│       └── Modal.tsx
 │   └── pages/
 │       └── index.astro
 │       └── chat/
 │           └── index.astro
+├── tests/
+|    ├── join-room.spec.ts
+|    ├── modal.spec.ts
+|    └── send-messages.spec.ts
 └── package.json
 ```
 
@@ -50,6 +55,18 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 `src/components/` is where components go, Astro/React/Vue/Svelte/Preact components. For this starter project, we're using React, but feel free to switch to your favorite framework.
 
 Any static assets, like images, can be placed in the `public/` directory.
+
+## End-to-End Testing With Playwright
+
+This starter kit uses [Playwright](https://playwright.dev/) for end-to-end testing. You can find the tests in the `tests/` directory. To run all of the tests, you can run `npx playwright test` from the root of the project. After all of the tests are complete, you will see a report of the tests that passed and failed. Run `npx playwright show-report` to see a visual representation of the test results on `http://localhost:9323`.
+
+Here are a few other commands you can use for Playwright testing:
+
+- `npx playwright test --ui` - Starts the interactive UI mode.
+- `npx playwright test --project=chromium` - Runs the tests only on Desktop Chrome.
+- `npx playwright test example-file.spec.ts` - Runs the tests in a specific file.
+- `npx playwright test --debug` - Runs the tests in debug mode.
+- `npx playwright codegen` - Auto generates tests with Codegen.
 
 ## Deployment
 
