@@ -58,7 +58,9 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 ## End-to-End Testing With Playwright
 
-This starter kit uses [Playwright](https://playwright.dev/) for end-to-end testing. You can find the tests in the `tests/` directory. To run all of the tests, you can run `npx playwright test` from the root of the project. After all of the tests are complete, you will see a report of the tests that passed and failed. Run `npx playwright show-report` to see a visual representation of the test results on `http://localhost:9323`.
+This starter kit uses [Playwright](https://playwright.dev/) for end-to-end testing. To install Playwright, run `npm install playwright` in the terminal.
+
+You can find the tests in the `tests/` directory. To run all of the tests, start the local server `npm run dev`, open a new tab in the terminal and run `npx playwright test`. After all of the tests are complete, you will see a report of the tests that passed and failed. Run `npx playwright show-report` to see a visual representation of the test results on `http://localhost:9323`.
 
 Here are a few other commands you can use for Playwright testing:
 

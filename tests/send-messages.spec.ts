@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 
 test("user sending a message", async ({ page }) => {
-  await page.goto("http://localhost:4321/");
+  await page.goto("/");
   await page.getByPlaceholder("username").click();
   await page.getByPlaceholder("username").fill("test-user");
   await page.getByPlaceholder("Room ID").click();

@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 
 test("join room with username and room number", async ({ page }) => {
-  await page.goto("http://localhost:4321/");
+  await page.goto("/");
   await page.getByPlaceholder("username").click();
   await page.getByPlaceholder("username").fill("test-user");
   await page.getByPlaceholder("Room ID").click();
@@ -11,7 +11,7 @@ test("join room with username and room number", async ({ page }) => {
 });
 
 test("join room as anonymous user and default room", async ({ page }) => {
-  await page.goto("http://localhost:4321/");
+  await page.goto("/");
   await page.getByPlaceholder("username").click();
   await page.getByPlaceholder("Room ID").click();
   await page.getByRole("button", { name: "Join Room" }).click();
