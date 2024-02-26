@@ -34,7 +34,7 @@
     "eslint-plugin-prettier": "^5.1.3",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
-    "partykit": "0.0.80",
+    "partykit": "0.0.93",
     "prettier": "3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "typescript": "^5.3.3"
