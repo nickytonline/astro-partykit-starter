@@ -43,6 +43,8 @@ Inside of your Astro project, you'll see the following folders and files:
 │       └── index.astro
 │       └── chat/
 │           └── index.astro
+|   └── tests/
+│           └── basic.test.ts
 └── package.json
 ```
 
