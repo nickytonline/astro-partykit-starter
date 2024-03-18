@@ -15,7 +15,7 @@
     "@astrojs/netlify": "^4.0.1",
     "@astrojs/react": "^3.0.10",
     "@astrojs/tailwind": "^5.1.0",
-    "@types/react": "^18.2.48",
+    "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.19",
     "astro": "^4.4.0",
     "partysocket": "0.0.25",
