@@ -36,7 +36,7 @@
     "lint-staged": "^15.2.2",
     "partykit": "0.0.105",
     "prettier": "3.2.5",
-    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-astro": "^0.14.0",
     "typescript": "^5.4.5"
   },
   "lint-staged": {
