@@ -37,7 +37,7 @@
     "partykit": "0.0.107",
     "prettier": "3.3.2",
     "prettier-plugin-astro": "^0.14.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.2"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,astro,mjs,mts,json,cjs}": "eslint --cache --fix",
