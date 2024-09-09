@@ -76,7 +76,7 @@ netlify deploy --build # Deploy your site add --prod for production
 
 ### Deploy to Partykit
 
-For the Partykit side of things, you can use the [Partykit CLI](https://docs.partykit.io/cli).
+For the Partykit side of things, you can use the [Partykit CLI](https://docs.partykit.io/reference/partykit-cli/).
 
 ```bash
 npx partykit deploy
