@@ -15,6 +15,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying                                                                       |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`                                                                   |
 | `npm run astro -- --help` | Get help using the Astro CLI                                                                                       |
+| `npm run test`            | Run tests with Vitest                                                                                              |
 
 If you plan to use Netlify, you need to install the [Netlify CLI](https://docs.netlify.com/cli/get-started/) to run `ntl dev`.
 
@@ -42,6 +43,8 @@ Inside of your Astro project, you'll see the following folders and files:
 │       └── index.astro
 │       └── chat/
 │           └── index.astro
+|   └── tests/
+│           └── basic.test.ts
 └── package.json
 ```
 

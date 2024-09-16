@@ -8,7 +8,8 @@
     "build": "astro check && astro build && partykit deploy",
     "preview": "astro preview",
     "astro": "astro",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "vitest"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
@@ -29,18 +30,20 @@
     "concurrently": "^9.0.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-astro": "^1.2.3",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "husky": "^9.1.4",
-    "lint-staged": "^15.2.10",
-    "partykit": "0.0.110",
-    "prettier": "3.3.3",
-    "prettier-plugin-astro": "^0.14.1",
-    "typescript": "^5.6.2"
+    "eslint-plugin-astro": "^0.31.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "partykit": "0.0.80",
+    "prettier": "3.2.4",
+    "prettier-plugin-astro": "^0.13.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,astro,mjs,mts,json,cjs}": "eslint --cache --fix",
-    "*.{js,jsx,ts,tsx,css,md,astro,mjs,mts,json,cjs}": "prettier --write"
+    "*.{js,jsx,ts,tsx,css,md,astro,mjs,mts,json,cjs}": "prettier --write",
+    "*.{ts,tsx}": "vitest related --run"
   }
 }
