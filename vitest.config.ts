@@ -1,9 +1,8 @@
-import { getViteConfig } from "astro/config";
+import { defineConfig } from 'vitest/config'
 
-export default getViteConfig({
+export default defineConfig({
   test: {
-    // Vitest configuration options
-    include: ["./**/*.test.ts", "./**/*.test.tsx"],
+    include: ['./**/*.test.ts', './**/*.test.tsx'],
     globals: true,
-  },
-});
+  }
+})
