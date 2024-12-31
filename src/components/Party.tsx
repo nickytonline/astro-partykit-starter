@@ -33,7 +33,7 @@ export const Party = ({ username, roomId }: PartyProps) => {
   return (
     <div className="grid place-content-center m-4">
       <h2>{roomId} Room</h2>
-      <form
+           <form
         className="mt-2 flex flex-col gap-4"
         onSubmit={(event) => {
           const formElement = event.target as HTMLFormElement;
