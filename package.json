@@ -15,7 +15,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/netlify": "^6.2.0",
     "@astrojs/react": "^4.2.2",
-    "@astrojs/tailwind": "^6.0.0",
+    "@astrojs/tailwind": "^6.0.2",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "astro": "^5.3.0",
