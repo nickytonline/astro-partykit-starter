@@ -1,32 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-  position: relative;
-}
+@layer base {
+  * {
+    position: relative;
+  }
 
-body {
-}
+  body {
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-semibold;
-  @apply tracking-tighter;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--tracking-tighter);
+  }
 
-h1 {
-  @apply text-4xl;
-}
+  h1 {
+    font-size: var(--text-4xl);
+  }
 
-h2 {
-  @apply text-3xl;
-}
+  h2 {
+    font-size: var(--text-3xl);
+  }
 
-h3 {
-  @apply text-2xl;
+  h3 {
+    font-size: var(--text-2xl);
+  }
 }
